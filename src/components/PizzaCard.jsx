@@ -17,10 +17,10 @@ function PizzaCard({title, price, imageUrl, sizes, types}) {
                 <div className="action-block">
                     <div className="choose-type-dough">
                     {
-                            types.map(val => (
-                                <div onClick={() => setActive(val)} className={`dough ${active === val ? 'active' : ''}`} >{typeNames[val]}</div>
-                            ))
-                        }
+                        types.map(val => (
+                            <div onClick={() => setActive(val)} className={`dough ${active === val ? 'active' : ''}`} >{typeNames[val]}</div>
+                        ))
+                    }
                     </div>
                     <div className="choose-type-size">
                         {
